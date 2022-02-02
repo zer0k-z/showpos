@@ -48,7 +48,7 @@ public Plugin myinfo =
 	name = "ShowPos",
 	author = "zer0.k",
 	description = "Server-sided showpos using hint text",
-	version = "0.0.1",
+	version = "0.0.2",
 	url = "https://github.com/zer0k-z/showpos"
 };
 
@@ -215,7 +215,7 @@ void ToggleShowPos(int client)
 			FormatEx(buffer, sizeof(buffer), "ShowPos now shows detailed values.");
 		}
 	}
-	PrintToChat(client, "%s%s.", PREFIX, buffer);
+	PrintToChat(client, "%s%s", PREFIX, buffer);
 }
 
 // Origin //
